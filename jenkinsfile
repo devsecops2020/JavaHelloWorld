@@ -1,7 +1,7 @@
 pipeline{
       agent any
       stages{
-            stage("Github Checkout"{
+            stage("Github Checkout"){
 		steps{
 		    git 'https://github.com/devsecops2020/JavaHelloWorld'
 		      }  
