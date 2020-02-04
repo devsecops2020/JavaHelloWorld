@@ -3,7 +3,7 @@ pipeline{
       stages{
             stage("Github Checkout"{
 		steps{
-		    git 'https://github.com/devsecops2020/JavaHelloWorld.git'
+		    git 'https://github.com/devsecops2020/JavaHelloWorld'
 		      }  
             	}
 	    }
