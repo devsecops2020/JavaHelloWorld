@@ -2,7 +2,7 @@ pipeline{
 agent any
 
       Environment{
-      PATH = "C:\Program Files\apache-maven-3.6.3\bin"
+      PATH = "maven-3.6.3"
       }
       stages{
             stage("Compile Stage"){
