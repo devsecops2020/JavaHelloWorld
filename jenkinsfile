@@ -21,5 +21,7 @@ agent any
                   sh 'mvn deploy'
                   }
               }
-         }
+           }
+      }
+}
 
