@@ -3,21 +3,21 @@ agent any
       stages{
             stage("Compile Stage"){
               steps{
-                  withMaven(Maven home: /opt/apache-maven-3.6.3'){
+                  withMaven(Maven home:'apache-maven-3.6.3'){
                   sh 'mvn clean compile'
                   }
               }
             }
             stage("Testing Stage"){
               steps{
-                  withMaven(Maven home: /opt/apache-maven-3.6.3'){
+                  withMaven(Maven home:'apache-maven-3.6.3'){
                   sh 'mvn test'
                   }
               }
             }
             stage("Deployment Stage"){
               steps{
-                  withMaven(Maven home: /opt/apache-maven-3.6.3'){
+                  withMaven(Maven home:'apache-maven-3.6.3'){
                   sh 'mvn deploy'
                   }
               }
