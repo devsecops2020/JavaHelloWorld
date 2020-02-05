@@ -3,21 +3,21 @@ pipeline{
       stages{
             stage("Compile Stage"){
               steps{
-		  withMaven(MAVEN_HOME:'apache-maven-3.6.3'){
+		  withMaven(Maven:'apache-maven-3.6.3'){
                   sh "mvn clean compile"
                   }
               }
             }
             stage("Testing Stage"){
               steps{
-		  withMaven(MAVEN_HOME:'apache-maven-3.6.3'){
+		  withMaven(Maven:'apache-maven-3.6.3'){
                   sh "mvn test"
                   }
               }
             }
             stage("Deployment Stage"){
               steps{
-		  withMaven(MAVEN_HOME:'apache-maven-3.6.3'){
+		  withMaven(Maven:'apache-maven-3.6.3'){
                   sh "mvn deploy"
                   }
               }
